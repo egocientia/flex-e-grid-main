@@ -1,0 +1,34 @@
+
+.mapa-conteudo {
+    width: 90vw;
+    border-radius: 10px;
+}
+
+.cartao__botao--mapa::before {
+    content: "\e908";
+    font-size: 24px;
+}
+
+@media screen and (min-width: 1440px) {
+    .principal {
+        grid-template-areas:
+        "titulo-pagina titulo-pagina titulo-pagina"
+        "mapa mapa videos-recentes"
+        "secao-videos secao-videos secao-videos"
+        "produtos-recentes destaque-produto destaque-produto"
+        "secao-produtos secao-produtos secao-produtos";
+    }
+
+    .mapa {
+        grid-area: mapa;
+    }
+
+    .mapa-conteudo {
+        width: 59vw;
+    }
+
+    .cartao__item-img {
+        width: 32px;
+        height: 32px;
+    }
+}
